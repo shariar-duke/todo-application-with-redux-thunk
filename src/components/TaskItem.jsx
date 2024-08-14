@@ -1,14 +1,17 @@
 /* eslint-disable react/prop-types */
 import { useDispatch } from "react-redux";
-import { colorSelected, deleted, toggled } from "../redux/todos/actions";
+import { colorSelected, deleted } from "../redux/todos/actions";
+import updateTodo from "../redux/todos/thunk/updateStatus";
 export default function TaskItem({ todo }) {
   const dispatch = useDispatch()
   const {id , text , completed , color} = todo
+
+  console.log("current status is", completed)
   
   function handleToggle () 
   {
     // toggled function ta ekta id receive kore
-     dispatch(toggled(id))
+     dispatch(updateTodo(id, completed))
   }
 
   function handleColor (color) 
