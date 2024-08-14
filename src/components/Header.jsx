@@ -1,7 +1,7 @@
 
-import { useState } from "react"
-import { useDispatch } from "react-redux"
-import { added } from "../redux/todos/actions"
+import { useState } from "react";
+import { useDispatch } from "react-redux";
+import addTodo from "../redux/todos/thunk/addTodo";
 export default function Header() {
   const [task , setTask] = useState("")
   const dispatch = useDispatch()
@@ -12,7 +12,8 @@ export default function Header() {
   const handleSubmit =(e)=> 
   {
     e.preventDefault();
-    dispatch(added(task))
+
+     dispatch(addTodo(task))
     setTask("")
   }
   return (
