@@ -1,27 +1,38 @@
 import { added } from "../actions";
-// ei thunk function ta ekta api call kore ekta data nia asbe then ekta actual action dispatch kore dibe 
-const addTodo = (todoText) =>  {
 
-    return async (dispatch) => 
-    {
-        const response = await fetch("http://localhost:9000/todos" , {
-          method:"POST", 
-          body : JSON.stringify({
-            text:todoText,
-            completed:false,
-          }),
-          headers:{
-            "Content-tyype": "application/json"
-          }
+const addTodo = (todoText) => {
 
-        });
-        const todo = await response.json()
-      // ekhn j todo ta post kora hoilo oi single todo ta ekhne pawa jabe...
+    console.log("The todo text is", todoText)
+  return async (dispatch) => {
+    try {
+      const response = await fetch("http://localhost:9000/todos", {
+        method: "POST",
+        body: JSON.stringify({
+          text: todoText,
+          completed: false,
+        }),
+        headers: {
+          "Content-Type": "application/json; charset=UTF-8",
+        },
+      });
       
-        dispatch(added(todo.text))
-    }
-}
-    
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
 
+      const todo = await response.json();
+      console.log('Received todo from server:', todo); // Add this line
+
+      // Ensure the response contains the expected properties
+      if (todo) {
+        dispatch(added(todo?.text));
+      } else {
+        console.error('Invalid todo item:', todo);
+      }
+    } catch (error) {
+      console.error('Failed to add todo:', error);
+    }
+  };
+};
 
 export default addTodo;
