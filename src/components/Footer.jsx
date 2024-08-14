@@ -37,7 +37,7 @@ export default function Footer() {
         }
     }
 
-    console.log("All the colors are", colors)
+
 
     return (
         <div className="flex justify-between mt-[10px]">

@@ -6,7 +6,7 @@ import TaskList from "./TaskList";
 export default function Taskboard() {
   const dispatch = useDispatch();
   return (
-    <div className="w-full max-w-3xl shadow-lg rounded-lg p-6 bg-white">
+    <div className="w-full max-w-3xl shadow-lg rounded-lg p-6 bg-white my-[200px]">
       <Header />
       <div className="flex justify-between my-4 text-xs text-gray-500 border-b-[1px] border-gray-300 pb-[12px]">
         <div className="flex space-x-2 cursor-pointer">
