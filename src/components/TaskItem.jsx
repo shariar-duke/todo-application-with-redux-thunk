@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useDispatch } from "react-redux";
-import { colorSelected, deleted } from "../redux/todos/actions";
+import { deleted } from "../redux/todos/actions";
+import updateColor from "../redux/todos/thunk/updateColor";
 import updateTodo from "../redux/todos/thunk/updateStatus";
 export default function TaskItem({ todo }) {
   const dispatch = useDispatch()
@@ -17,7 +18,7 @@ export default function TaskItem({ todo }) {
   function handleColor (color) 
   {
 
-    dispatch(colorSelected(id,color))
+    dispatch(updateColor(id,color))
   }
 
   function handleDelete() 
