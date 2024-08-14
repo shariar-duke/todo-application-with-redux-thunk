@@ -3,88 +3,102 @@
     {
       "id": 1,
       "text": "Learn Vanilla JavaScript",
-      "completed": true,
-      "color": "yellow"
+      "completed": false,
+      "color": "green"
     },
     {
       "id": 2,
       "text": "Learn Modern ES6+ JavaScript",
-      "completed": true,
-      "color": "red"
+      "completed": false,
+      "color": "green"
     },
     {
       "id": 3,
       "text": "Learn React JS",
-      "completed": true,
-      "color": "yellow"
+      "completed": false,
+      "color": "green"
     },
     {
       "text": "Learn Redux Basics",
       "completed": true,
       "id": 4,
-      "color": "red"
+      "color": "green"
     },
     {
       "text": "Learn Redux fundamentals",
       "completed": true,
       "id": 5,
-      "color": "red"
+      "color": "green"
     },
     {
       "text": "learn Redux",
       "completed": true,
-      "id": 6
+      "id": 6,
+      "color": "green"
     },
     {
       "text": "Learn Redux Toolkit",
       "completed": true,
-      "id": 7
+      "id": 7,
+      "color": "green"
     },
     {
       "text": "Test",
       "completed": true,
-      "id": 8
+      "id": 8,
+      "color": "green"
     },
     {
       "text": "hdjhdjhdjsdh",
       "completed": true,
-      "id": 9
+      "id": 9,
+      "color": "green"
     },
     {
-      "id": 10
+      "id": 10,
+      "color": "green"
     },
     {
-      "id": 11
+      "id": 11,
+      "color": "green"
     },
     {
-      "id": 12
+      "id": 12,
+      "color": "green"
     },
     {
-      "id": 13
+      "id": 13,
+      "color": "green"
     },
     {
-      "id": 14
+      "id": 14,
+      "color": "green"
     },
     {
-      "id": 15
+      "id": 15,
+      "color": "green"
     },
     {
-      "id": 16
+      "id": 16,
+      "color": "green"
     },
     {
       "text": "ddd",
       "completed": true,
-      "id": 17
+      "id": 17,
+      "color": "green"
     },
     {
       "text": "ddd",
       "completed": true,
-      "id": 18
+      "id": 18,
+      "color": "green"
     },
     {
       "text": "dddddddd",
       "completed": true,
-      "id": 19
+      "id": 19,
+      "color": "green"
     },
     {
       "text": "Shariar Duke",
